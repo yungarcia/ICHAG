@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="topesUltrasonido.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.66190376"
+     inkscape:cx="397.33873"
+     inkscape:cy="440.39635"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.59007;stroke-miterlimit:12.7;stroke-opacity:1"
+       id="rect13"
+       width="19.409929"
+       height="178.40993"
+       x="5.9729924"
+       y="5.8316979" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.59007;stroke-miterlimit:12.7;stroke-opacity:1"
+       id="rect13-9"
+       width="19.409929"
+       height="178.40993"
+       x="32.017395"
+       y="5.8316979" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.59007;stroke-miterlimit:12.7;stroke-opacity:1"
+       id="rect13-8"
+       width="19.409929"
+       height="178.40993"
+       x="57.188393"
+       y="5.8316979" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.59007;stroke-miterlimit:12.7;stroke-opacity:1"
+       id="rect13-2"
+       width="19.409929"
+       height="178.40993"
+       x="83.267647"
+       y="5.8316979" />
+  </g>
+</svg>
