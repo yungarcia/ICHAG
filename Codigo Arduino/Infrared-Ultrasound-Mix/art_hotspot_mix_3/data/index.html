@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Panel de control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="girasol" viewBox="-50 -50 100 100">
+        <g fill="#E6CB6E"><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(0)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(30)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(60)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(90)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(120)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(150)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(180)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(210)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(240)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(270)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(300)"/><ellipse cx="0" cy="-34" rx="9" ry="16" transform="rotate(330)"/></g>
+        <g fill="#D4AE45" transform="rotate(15)"><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(0)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(30)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(60)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(90)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(120)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(150)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(180)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(210)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(240)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(270)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(300)"/><ellipse cx="0" cy="-26" rx="8" ry="13" transform="rotate(330)"/></g>
+        <circle r="18" fill="#8A6420"/>
+        <circle r="11" fill="#6B4B18"/>
+      </symbol>
+      <symbol id="nube" viewBox="0 0 120 70">
+        <g fill="#6F92B5"><circle cx="40" cy="44" r="22"/><circle cx="64" cy="32" r="27"/><circle cx="90" cy="44" r="20"/><rect x="18" y="44" width="90" height="22" rx="11"/></g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <main>
+    <h1>Panel de control</h1>
+
+    <!-- ========== LUZ INFRARROJA ========== -->
+    <section class="card" id="infrarroja">
+      <svg class="deco flor" style="left:-5%;bottom:-48px;width:130px;height:130px;transform:rotate(10deg)" viewBox="0 0 100 100" aria-hidden="true"><use href="#girasol" width="100" height="100"/></svg>
+      <svg class="deco flor" style="left:26%;bottom:-62px;width:110px;height:110px;transform:rotate(-12deg)" viewBox="0 0 100 100" aria-hidden="true"><use href="#girasol" width="100" height="100"/></svg>
+      <svg class="deco flor" style="left:48%;bottom:-44px;width:130px;height:130px;transform:rotate(20deg)" viewBox="0 0 100 100" aria-hidden="true"><use href="#girasol" width="100" height="100"/></svg>
+      <svg class="deco flor" style="right:-8%;bottom:-52px;width:100px;height:100px;transform:rotate(-8deg)" viewBox="0 0 100 100" aria-hidden="true"><use href="#girasol" width="100" height="100"/></svg>
+      <svg class="deco flor" style="right:-6%;bottom:36px;width:70px;height:70px;transform:rotate(30deg)" viewBox="0 0 100 100" aria-hidden="true"><use href="#girasol" width="100" height="100"/></svg>
+      <svg class="deco flor" style="left:3%;bottom:62px;width:60px;height:60px;transform:rotate(-20deg)" viewBox="0 0 100 100" aria-hidden="true"><use href="#girasol" width="100" height="100"/></svg>
+      <div class="action">
+        <button class="row" aria-pressed="false" onclick="toggleDeviceStatus('infrarroja')">
+          <span class="row-title">Luz infrarroja</span>
+          <span class="row-state">Desactivada</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== ULTRASONIDO ========== -->
+    <section class="card" id="ultrasonido">
+      <svg class="deco nube" style="left:-6%;top:118px;width:130px;height:76px" viewBox="0 0 120 70" aria-hidden="true"><use href="#nube" width="120" height="70"/></svg>
+      <svg class="deco nube" style="left:28%;top:168px;width:100px;height:58px" viewBox="0 0 120 70" aria-hidden="true"><use href="#nube" width="120" height="70"/></svg>
+      <svg class="deco nube" style="right:-8%;top:130px;width:170px;height:99px" viewBox="0 0 120 70" aria-hidden="true"><use href="#nube" width="120" height="70"/></svg>
+      <div class="action">
+        <button class="row" aria-pressed="false" onclick="toggleDeviceStatus('ultrasonido')">
+          <span class="row-title">Ultrasonido</span>
+          <span class="row-state">Desactivado</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== ACTIVIDAD ========== -->
+    <section class="card log">
+      <h3>Actividad</h3>
+      <div id="statusPanel">Sistema iniciado. Esperando órdenes...</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
